@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en
+name: StageCraft
+primary: true
+siteGroup: 0a9d780b-139b-4b2b-aace-e65b023e50a0 # StageCraft
+sortOrder: 1

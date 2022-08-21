@@ -1,0 +1,26 @@
+dateModified: 1661055803
+email:
+  fromEmail: emailnzjoe@gmail.com
+  fromName: StageCraft
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0a9d780b-139b-4b2b-aace-e65b023e50a0: StageCraft # StageCraft
+    08a66ba6-570b-4304-9192-aae3fab47306: Course # Course
+    98e751bd-c025-43ee-9615-2ee39bbcbc9b: Common # Common
+    473cd196-cf5c-4baa-a5ea-349a3bb0f6db: Home # Home
+    760c17e8-b9f1-44a8-934c-82ba2d5e67dd: Courses # Courses
+    00885ec1-1272-40f5-b824-069712416b50: Home # Home
+    7003e51a-380b-45ff-b5c7-8170a7148cc5: StageCraft # StageCraft
+system:
+  edition: solo
+  live: true
+  name: StageCraft
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
