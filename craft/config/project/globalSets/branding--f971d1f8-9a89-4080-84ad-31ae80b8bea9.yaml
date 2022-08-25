@@ -1,0 +1,24 @@
+fieldLayouts:
+  e51ca82b-101b-4ea6-ad55-f289bff6df4b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6898c965-368f-4e26-a4a4-8054b918a827 # Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0a6c52a5-c3a1-4a72-9272-4154e5874f16
+            userCondition: null
+            warning: null
+            width: 100
+        name: Images
+        uid: c48a47f5-7194-495a-af55-39d21e2e5b09
+        userCondition: null
+handle: branding
+name: Branding
+sortOrder: 1

@@ -1,0 +1,3 @@
+ - Integrate navbar into each page to stop werid scaling
+ - Redo entry tags with Craft's tag feature
+ - Grouping/search on all courses page

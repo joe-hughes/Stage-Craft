@@ -1,0 +1,19 @@
+columnSuffix: vtcivwkx
+contentColumnType: text
+fieldGroup: 7e4af13a-297b-44c7-9e6a-e48fb5e523e7 # Lesson
+handle: blurb
+instructions: 'Blurb for this display card'
+name: Blurb
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

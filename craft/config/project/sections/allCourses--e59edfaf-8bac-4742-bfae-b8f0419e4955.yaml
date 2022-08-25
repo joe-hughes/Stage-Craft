@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: allCourses
+name: 'All Courses'
+propagationMethod: all
+siteSettings:
+  7003e51a-380b-45ff-b5c7-8170a7148cc5: # StageCraft
+    enabledByDefault: true
+    hasUrls: true
+    template: allCourses.twig
+    uriFormat: all-courses
+type: single

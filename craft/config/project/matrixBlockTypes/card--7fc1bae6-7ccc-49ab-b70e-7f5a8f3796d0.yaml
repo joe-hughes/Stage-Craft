@@ -1,0 +1,54 @@
+field: cb874278-0da4-4d05-906b-675ebd60a53b # cards
+fieldLayouts:
+  4d86fcfa-d683-477e-baa3-e5634f718986:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 45d3dd5f-9a76-4ef1-bd92-34b4b7bc7b58 # redactor
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66a0b977-b659-493b-a872-39d92cf4f45d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e6d0d193-12d9-42d0-b927-d0d734099cdb
+        userCondition: null
+fields:
+  45d3dd5f-9a76-4ef1-bd92-34b4b7bc7b58: # redactor
+    columnSuffix: xrtsojkt
+    contentColumnType: text
+    fieldGroup: null
+    handle: redactor
+    instructions: null
+    name: redactor
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: card
+name: card
+sortOrder: 1

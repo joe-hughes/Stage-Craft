@@ -1,0 +1,166 @@
+columnSuffix: dmzzalgn
+contentColumnType: string
+fieldGroup: 98e751bd-c025-43ee-9615-2ee39bbcbc9b # Common
+handle: courseTags
+instructions: 'Tags to sort courses'
+name: 'Course Tags'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Lighting
+        -
+          - value
+          - lighting
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Sound
+        -
+          - value
+          - sound
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Stage Management'
+        -
+          - value
+          - stageManagement
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Audio Visual'
+        -
+          - value
+          - audioVisual
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Livestreaming
+        -
+          - value
+          - livestreaming
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Production Management'
+        -
+          - value
+          - productionManagement
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - General
+        -
+          - value
+          - general
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Intro
+        -
+          - value
+          - intro
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Level 1'
+        -
+          - value
+          - level1
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Level 2'
+        -
+          - value
+          - level2
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Level 3'
+        -
+          - value
+          - level3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Industry
+        -
+          - value
+          - industry
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Design
+        -
+          - value
+          - design
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Apply
+        -
+          - value
+          - apply
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Checkboxes

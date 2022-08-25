@@ -1,0 +1,20 @@
+columnSuffix: ftfyjoff
+contentColumnType: integer(10)
+fieldGroup: 7e4af13a-297b-44c7-9e6a-e48fb5e523e7 # Lesson
+handle: orderIndex
+instructions: 'Number - 1 is first lesson in a course, 2 is second ....'
+name: 'Order Index'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 1
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

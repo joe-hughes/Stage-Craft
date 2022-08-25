@@ -1,17 +1,47 @@
-dateModified: 1661055803
+dateModified: 1661398240
 email:
   fromEmail: emailnzjoe@gmail.com
   fromName: StageCraft
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  base:
+    hasUrls: true
+    name: Base
+    settings:
+      path: '@webroot/assets/base'
+    type: craft\fs\Local
+    url: '@web/assets/base'
 meta:
   __names__:
     0a9d780b-139b-4b2b-aace-e65b023e50a0: StageCraft # StageCraft
-    08a66ba6-570b-4304-9192-aae3fab47306: Course # Course
+    3ba98823-b17d-4778-a3a2-65a46d6402b1: Blurb # Blurb
+    7c94ef32-b523-4f2c-9b33-6a6a88e9071b: Tagline # Tagline
+    7e4af13a-297b-44c7-9e6a-e48fb5e523e7: Lesson # Lesson
+    7fc1bae6-7ccc-49ab-b70e-7f5a8f3796d0: card # card
+    8ae80f80-dda0-415e-821f-08ddc32f2525: 'Course Tags' # Course Tags
+    9b41905c-1194-4d27-8f5f-afb4ccfb6a18: 'Courses Structure' # Courses Structure
+    45d3dd5f-9a76-4ef1-bd92-34b4b7bc7b58: redactor # redactor
+    70e6fcab-0d35-4b12-89a1-47822b74bd85: Base # Base
+    74f6c850-cba2-46b8-b972-12b405727dbb: Redactor # Redactor
     98e751bd-c025-43ee-9615-2ee39bbcbc9b: Common # Common
     473cd196-cf5c-4baa-a5ea-349a3bb0f6db: Home # Home
-    760c17e8-b9f1-44a8-934c-82ba2d5e67dd: Courses # Courses
     00885ec1-1272-40f5-b824-069712416b50: Home # Home
+    6898c965-368f-4e26-a4a4-8054b918a827: Logo # Logo
+    6973ba16-7b59-4d9d-a25d-b356f9073a6c: 'All Courses' # All Courses
     7003e51a-380b-45ff-b5c7-8170a7148cc5: StageCraft # StageCraft
+    755298d6-91c9-4de3-b4ed-1be63429983f: 'Order Index' # Order Index
+    957247f2-372a-46e5-8e07-811eec1bedd7: Course # Course
+    ae727592-cdcb-464b-824c-a2aefc697ada: Homepage # Homepage
+    b21277df-0868-459b-aa4f-825ec466acec: Lesson # Lesson
+    c32a631a-0aee-45aa-a428-01aaa1231be6: 'Hero Image' # Hero Image
+    cb874278-0da4-4d05-906b-675ebd60a53b: cards # cards
+    e59edfaf-8bac-4742-bfae-b8f0419e4955: 'All Courses' # All Courses
+    f971d1f8-9a89-4080-84ad-31ae80b8bea9: Branding
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
   edition: solo
   live: true

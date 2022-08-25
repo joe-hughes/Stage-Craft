@@ -1,0 +1,12 @@
+<nav class="navbar {% if entry.url == siteUrl %}fixed-top{% endif %}">
+    <div class="container pt-4 d-flex align-items-center">
+        <a class="navbar-brand me-auto" href="/">
+            <img width="300px" class="logo mx-5 mx-sm-0 " src={{branding.logo.one().url}} alt="">
+        </a>
+        <div class="navbar-nav d-flex px-5 px-sm-0 flex-row" height="100%">
+            <a href={{craft.entries.section('allCourses').one().url}} class="nav-link text-light px-2">all courses</a>
+            <a href="" class="nav-link text-light px-2">about</a>
+            <a href="" class="nav-link text-light px-2">contribute</a>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,36 @@
+ {% extends '_layout/base' %}
+
+{% block content %}
+<div class="vh100 bg-dark text-light">
+    <div class="container py-5">
+        <div class="row">
+            {% for item in craft.entries().section('coursesStructure').level(1).all() %}
+                <div class="col-xl-3 col-md-6 col-12">
+                    <div class="card p-3">
+                        <div class="card-body text-decoration-none text-dark">
+                            <h5 class="text-decoration-none card-title">{{item.title}}</h5>
+                            <p class="text-decoration-none pt-2 card-text">{{item.blurb}}</p>
+                            <a class="btn btn-primary rounded-pill mb-3 text-light " href={{item.url}}>View</a>
+
+                            <div class="container-fluid">
+                                <div class="tags row">
+                                    {% for tag in item.courseTags %}
+                                        <a href="#" class="col-auto tag p-2 px-3 mb-2 me-2 text-decoration-none rounded-pill bg-dark text-light" style"width: fit-content;">
+                                            {{tag.label}}
+                                        </a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock content %}
+ 

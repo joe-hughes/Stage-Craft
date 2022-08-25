@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: coursesStructure
+name: 'Courses Structure'
+propagationMethod: all
+siteSettings:
+  7003e51a-380b-45ff-b5c7-8170a7148cc5: # StageCraft
+    enabledByDefault: true
+    hasUrls: true
+    template: lesson.twig
+    uriFormat: 'courses/{slug}'
+structure:
+  maxLevels: null
+  uid: 17062b14-8a61-4f6d-9da8-04735720a568
+type: structure

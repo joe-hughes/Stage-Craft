@@ -1,0 +1,216 @@
+{% extends '_layout/base' %}
+
+{% block content %}
+
+<div class="row px-0 px-sm-3 px-md-5 bg-dark">
+    <!--NORMAL SIDEBAR-->
+    <div class="d-lg-flex px-4 pe-2 col-2 d-none ">
+        <div class="d-flex flex-column p-3 pt-5 text-white  w100pc">
+            {% set course = craft.entries().section(entry.getSection()).level(1).one() %}
+
+            <a href =
+            {% if entry.level > 1 %}
+                {{course.url}}
+            {% else %}
+                {{entry.url}}
+            {% endif %}
+             class="d-flex align-items-center mb-3 mb-md-0 text-white text-decoration-none">
+            <span class="fs-4 px-2">
+
+            {% if entry.level > 1 %}
+                {{course.title}}
+            {% else %}
+                {{entry.title}}
+            {% endif %}
+
+
+            </span>
+            </a>
+            <hr>
+
+            <ul class="nav nav-pills flex-column ">
+                <li>
+                    <a href={{course.url}} class="nav-link 
+                                {% if entry.title == course.title %}
+                                active" aria-current="page
+                                {% else %}
+                                text-white
+                                {% endif %}
+                                ">
+                                Intro
+                    </a>
+                </li>
+                {% if entry.level > 1 %}
+                    {% for navItem in course.children().all() %}
+                        <li>
+                            <a href={{navItem.url}} class="nav-link 
+                            {% if navItem.title == entry.title %}
+                             active" aria-current="page
+                            {% else %}
+                            text-white
+                            {% endif %}
+                            ">
+                            {{navItem.title}}
+                            </a>
+                        </li>
+                    {% endfor %}
+                {% else %}
+                    {% for navItem in entry.children().all() %}
+                        <li>
+                            <a href={{navItem.url}} class="nav-link 
+                            {% if navItem.title == entry.title %}
+                             active" aria-current="page
+                            {% else %}
+                            text-white
+                            {% endif %}
+                            ">
+                            {{navItem.title}}
+                            </a>
+                        </li>
+                    {% endfor %}
+                {% endif %}
+
+
+            </ul>
+            <hr>
+            <a href={{craft.entries.section('allCourses').one().url}} class="d-flex  align-items-center mb-3 mb-md-0 text-white text-decoration-none">
+                all courses
+            </a>
+        </div>
+    </div>
+
+    {% set course = craft.entries().section(entry.getSection()).level(1).one() %}
+
+        <!--OFFCANVAS SIDEBAR-->
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header pb-0 pt-5">
+        <div class="container pb-0">
+            <div class="d-flex pb-0 text-light row justify-content-between">
+                <div class="col-10">
+                    <a href =
+                    {% if entry.level > 1 %}
+                        {{course.url}}
+                    {% else %}
+                        {{entry.url}}
+                    {% endif %}
+                    class="d-flex align-items-center mb-3 mb-md-0 text-white text-decoration-none">
+                        <span class="fs-4 px-2">
+
+                        {% if entry.level > 1 %}
+                            {{course.title}}
+                        {% else %}
+                            {{entry.title}}
+                        {% endif %}
+
+
+                        </span>
+                    </a>
+                    
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas-body pt-0">
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li>
+                    <a href={{course.url}} class="nav-link 
+                                {% if entry.title == course.title %}
+                                active" aria-current="page
+                                {% else %}
+                                text-white
+                                {% endif %}
+                                ">
+                                Intro
+                    </a>
+                </li>
+                {% if entry.level > 1 %}
+                    {% for navItem in course.children().all() %}
+                        <li>
+                            <a href={{navItem.url}} class="nav-link 
+                            {% if navItem.title == entry.title %}
+                             active" aria-current="page
+                            {% else %}
+                            text-white
+                            {% endif %}
+                            ">
+                            {{navItem.title}}
+                            </a>
+                        </li>
+                    {% endfor %}
+                {% else %}
+                    {% for navItem in entry.children().all() %}
+                        <li>
+                            <a href={{navItem.url}} class="nav-link 
+                            {% if navItem.title == entry.title %}
+                             active" aria-current="page
+                            {% else %}
+                            text-white
+                            {% endif %}
+                            ">
+                            {{navItem.title}}
+                            </a>
+                        </li>
+                    {% endfor %}
+                {% endif %}
+
+
+            </ul>
+            <hr>
+            <a href={{craft.entries.section('allCourses').one().url}} class="d-flex align-items-center mb-3 mb-md-0 text-white text-decoration-none">
+                all courses
+            </a>
+
+    </div>
+    </div>
+
+    <!--MAIN CONTENT-->
+    <div class="col-12 bg-dark text-white col-lg-10 p-5">
+        <div class="row d-flex justify-content-between">
+            <div class="col-10 col-lg-12">
+                <h1 class="pb-4">{{entry.title}}</h1>
+            </div>
+            <div class="col-2 col-md-0">
+                <button class="btn d-flex mb-5 text-light d-lg-none btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                      Menu
+                </button>
+            </div>
+
+        </div>
+        
+        {{entry.redactor}}
+
+        <br>
+        <hr>
+        <div class="footer container-fluid">
+            {% set next = craft.entries().nextSiblingOf(entry).one() %}
+            {% set prev = craft.entries().prevSiblingOf(entry).one() %}
+            <div class="row d-flex justify-content-between">
+                <div class="col-4">
+                {% if prev %}
+                <a href={{prev.url}}>Prev >  {{prev.title}}</a>
+                {% elseif course.title == entry.title %}
+                <a href={{craft.entries.section('allCourses').one().url}}>Prev >  All courses</a>
+                {% else %}
+                <a href={{course.url}}>Prev >  Intro</a>
+                {% endif %}
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                {% if next %}
+                <a href={{next.url}}>Next >  {{next.title}}</a>
+                {% elseif course.title == entry.title %}
+                <a href={{course.children().one().url}}>Next >  {{course.children().one().title}}</a>
+                {% else %}
+                <a href={{course.url}}>Next >  Intro</a>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

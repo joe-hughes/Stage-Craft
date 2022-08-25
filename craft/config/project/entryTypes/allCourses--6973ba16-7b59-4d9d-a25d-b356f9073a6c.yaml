@@ -1,0 +1,43 @@
+fieldLayouts:
+  abadb628-be50-4798-a4d1-fb77d6beebbc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 15cefbe4-2d32-4b5f-b5a2-40f64ca80378
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ecb8b7c7-4958-401a-869d-e3b7539c789a
+        userCondition: null
+handle: allCourses
+hasTitleField: false
+name: 'All Courses'
+section: e59edfaf-8bac-4742-bfae-b8f0419e4955 # All Courses
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

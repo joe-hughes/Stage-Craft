@@ -1,0 +1,79 @@
+fieldLayouts:
+  6ea8c179-4fb2-48a0-bf61-1622bc76bb25:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c0b3a42c-9599-4aa2-9e8b-871c9176ffaf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3ba98823-b17d-4778-a3a2-65a46d6402b1 # Blurb
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc55a076-a860-4a44-81cc-9939c53c47ca
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8ae80f80-dda0-415e-821f-08ddc32f2525 # Course Tags
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b15448e7-6293-481d-8bf5-adc11e5d13d9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 74f6c850-cba2-46b8-b972-12b405727dbb # Redactor
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2ffd3723-5ff8-4694-83d9-be709f5c1eaa
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e6019d27-1c2e-48a4-922b-64b3229b9cc7
+        userCondition: null
+handle: course
+hasTitleField: true
+name: Course
+section: 9b41905c-1194-4d27-8f5f-afb4ccfb6a18 # Courses Structure
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

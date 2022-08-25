@@ -1,7 +1,39 @@
 {% extends '_layout/base' %}
 
 {% block content %}
+<div class="bg-dark">
 
-test
+
+    <div class="header text-light" style="background: url({{entry.heroImage.one().url}}), #003049;    background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: screen;
+        height: 100vh;">
+        <div class="container-fluid d-flex justify-content-center align-items-center vh100">
+
+            <div class="row container-fluid px-5 mx-5">
+
+                <div class="col-7">
+                    <h1 class="display-1">{{entry.tagline}}
+                    </h1>
+                </div>
+                <div class="col-5 d-flex justify-content-center align-items-center ">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {% for card in entry.cards.all() %}
+    <div class="row text-light">
+        <div class="col-0 col-sm-2"></div>
+        <div class="col-8 px-5 p-3">
+            {{card.redactor}}
+        </div>
+        <div class="col-0 col-sm-2"></div>
+    </div>
+    
+    {% endfor %}
+</div>
+
 
 {% endblock content %}
