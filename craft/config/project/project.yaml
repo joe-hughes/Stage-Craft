@@ -1,4 +1,4 @@
-dateModified: 1661398240
+dateModified: 1661402890
 email:
   fromEmail: emailnzjoe@gmail.com
   fromName: StageCraft
@@ -36,7 +36,7 @@ meta:
     c32a631a-0aee-45aa-a428-01aaa1231be6: 'Hero Image' # Hero Image
     cb874278-0da4-4d05-906b-675ebd60a53b: cards # cards
     e59edfaf-8bac-4742-bfae-b8f0419e4955: 'All Courses' # All Courses
-    f971d1f8-9a89-4080-84ad-31ae80b8bea9: Branding
+    f971d1f8-9a89-4080-84ad-31ae80b8bea9: Branding # Branding
 plugins:
   redactor:
     edition: standard
@@ -45,7 +45,8 @@ plugins:
 system:
   edition: solo
   live: true
-  name: StageCraft
+  name: 'tech theatre.nz'
+  retryDuration: null
   schemaVersion: 4.0.0.9
   timeZone: America/Los_Angeles
 users:
