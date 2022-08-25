@@ -1,4 +1,4 @@
-dateModified: 1661402890
+dateModified: 1661403054
 email:
   fromEmail: emailnzjoe@gmail.com
   fromName: StageCraft
@@ -11,6 +11,10 @@ fs:
       path: '@webroot/assets/base'
     type: craft\fs\Local
     url: '@web/assets/base'
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
 meta:
   __names__:
     0a9d780b-139b-4b2b-aace-e65b023e50a0: StageCraft # StageCraft
@@ -31,6 +35,7 @@ meta:
     7003e51a-380b-45ff-b5c7-8170a7148cc5: StageCraft # StageCraft
     755298d6-91c9-4de3-b4ed-1be63429983f: 'Order Index' # Order Index
     957247f2-372a-46e5-8e07-811eec1bedd7: Course # Course
+    a21c3685-7a35-4b65-95f8-6fbfe911725b: 'Public Schema'
     ae727592-cdcb-464b-824c-a2aefc697ada: Homepage # Homepage
     b21277df-0868-459b-aa4f-825ec466acec: Lesson # Lesson
     c32a631a-0aee-45aa-a428-01aaa1231be6: 'Hero Image' # Hero Image
