@@ -2,5 +2,5 @@ name: stagecraft
 recipe: lamp
 config:
   php: '8.0'
-  webroot: ./craft/web
+  webroot: ./web
   database: mysql
